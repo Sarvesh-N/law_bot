@@ -19,7 +19,7 @@ def load_embedding_model():
 
 @st.cache_resource
 def load_gemini():
-    genai.configure(api_key="AIzaSyCLq42EhGiB5gPu8MroZOG2ft3aq8wKM54")  # use the gemini api key
+    genai.configure(api_key="")  # use the gemini api key
     return genai.GenerativeModel("gemini-2.5-pro")
 
 index, df = load_index_and_data()
